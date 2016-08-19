@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="style.css">
 
   </head>
-  <body ng-app="ngPomodoro" ng-init="message = 'Testing....'">
-
-    <h1>{{ message }}</h1>
+  <body ng-app="ngPomodoro" ng-controller="ctrPomodoro">
 
     <div id="container">
       <h1>Pomodoro clock</h1>
@@ -18,9 +16,9 @@
         <div id="break">
           <h2>Break Length</h2>
           <div class="time">
-          <button>-</button>
-          <p>5</p>
-          <button>+</button>
+          <button ng-click="decreaseBreak()">-</button>
+          <p>{{break}}</p>
+          <button ng-click="increaseBreak()">+</button>
           </div>
         </div>
 
@@ -28,9 +26,9 @@
 
           <h2>Session length</h2>
           <div class="time">
-          <button>-</button>
-          <p>25</p>
-          <button>+</button>
+          <button ng-click="decreaseSession()">-</button>
+          <p>{{session}}</p>
+          <button ng-click="increaseSession()">+</button>
           </div>
         </div>
 
@@ -38,7 +36,7 @@
 
       <div id="clock">
         <h2>Session</h2>
-        <p id="Time"> 25:00</p>
+        <p id="Time">{{session}}</p>
       </div>
 
     </div>
