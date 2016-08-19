@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Pomodoro Clock</title>
-    <script type="text/javascript" src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
     <link rel="stylesheet" href="style.css">
+
   </head>
-  <body>
+  <body ng-app="ngPomodoro" ng-init="message = 'Testing....'">
+
+    <h1>{{ message }}</h1>
 
     <div id="container">
       <h1>Pomodoro clock</h1>
