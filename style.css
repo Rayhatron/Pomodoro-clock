@@ -1,0 +1,70 @@
+body{
+  margin: 0px;
+  background-color: yellow;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  background-color: blue;
+}
+
+#buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 250px;
+  background-color: red;
+}
+
+#clock{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 250px;
+  height: 250px;
+  border: 3px solid green;
+  background-color: black;
+  border-radius: 50%;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+}
+
+#break{
+  background-color: orange;
+  margin: 5px;
+}
+#session{
+  background-color: teal;
+  margin: 5px;
+}
+
+.time{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: brown;
+  
+}
+
+.time button{
+  margin: 8px;
+  font-size: 2em;
+  color: white;
+  background: none;
+  border: none;
+}
+
+.time p{
+  font-size: 1.5em;
+  color: white;
+}

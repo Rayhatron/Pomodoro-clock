@@ -3,8 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>Pomodoro Clock</title>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
+    <div id="container">
+      <h1>Pomodoro clock</h1>
+      <div id="buttons">
+        <div id="break">
+          <h2>Break Length</h2>
+          <div class="time">
+          <button>-</button>
+          <p>5</p>
+          <button>+</button>
+          </div>
+        </div>
+
+        <div id="session">
+
+          <h2>Session length</h2>
+          <div class="time">
+          <button>-</button>
+          <p>25</p>
+          <button>+</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="clock">
+        <h2>Session</h2>
+        <p id="Time"> 25:00</p>
+      </div>
+
+    </div>
   </body>
 </html>
