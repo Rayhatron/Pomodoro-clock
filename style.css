@@ -24,6 +24,12 @@ body{
   background-color: red;
 }
 
+input{
+  width: 50px;
+  font-size: 25px;
+  text-align: center;
+}
+
 #clock{
   display: flex;
   justify-content: center;
@@ -53,7 +59,7 @@ body{
   align-items: center;
   justify-content: center;
   background-color: brown;
-  
+
 }
 
 .time button{

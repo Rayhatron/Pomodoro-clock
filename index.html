@@ -17,7 +17,7 @@
           <h2>Break Length</h2>
           <div class="time">
           <button ng-click="decreaseBreak()">-</button>
-          <p>{{break}}</p>
+          <input ng-model="break">
           <button ng-click="increaseBreak()">+</button>
           </div>
         </div>
@@ -27,16 +27,16 @@
           <h2>Session length</h2>
           <div class="time">
           <button ng-click="decreaseSession()">-</button>
-          <p>{{session}}</p>
+          <input ng-model="session">
           <button ng-click="increaseSession()">+</button>
           </div>
         </div>
 
       </div>
 
-      <div id="clock">
+      <div id="clock" ng-click="startTimer()">
         <h2>Session</h2>
-        <p id="Time">{{session}}</p>
+        <p id="Time">{{displayTime}}</p>
       </div>
 
     </div>
