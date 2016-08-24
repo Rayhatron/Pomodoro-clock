@@ -34,10 +34,13 @@
 
       </div>
 
-      <div id="clock" ng-click="startTimer()">
-        <h2>Session</h2>
+      <div id="clock">
+        <h2 id="title">{{title}}</h2>
         <p id="Time">{{displayTime}}</p>
       </div>
+
+      <button ng-click="startTimer()">Start</button>
+      <button ng-click="finishAll()">Stop</button>
 
     </div>
   </body>
