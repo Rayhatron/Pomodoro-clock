@@ -83,6 +83,7 @@ angular.module("ngPomodoro", []);
             document.getElementById('title').innerHTML = $scope.title;
             document.getElementById('Time').innerHTML = $scope.displayTime;
             document.getElementById('clock').style.background = "#333333";
+              document.getElementById('sound').innerHTML = '<audio autoplay><source src="beep.mp3"></audio>';
           }
 
           $scope.updateDisplay = function(){
