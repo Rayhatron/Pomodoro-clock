@@ -1,6 +1,8 @@
+@import 'https://fonts.googleapis.com/css?family=Orbitron';
+
 body{
   margin: 0px;
-  background-color: yellow;
+  background-color: #333333;
 }
 
 #container{
@@ -11,17 +13,21 @@ body{
   align-items: center;
   justify-content: center;
   margin: 0px auto;
-  background-color: blue;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
 }
+
+#container h1{
+  font-size: 3em;
+}
+
 
 #buttons{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 400px;
   height: 250px;
-  background-color: red;
 }
 
 input{
@@ -36,8 +42,7 @@ input{
   flex-direction: column;
   width: 250px;
   height: 250px;
-  border: 3px solid green;
-  background-color: black;
+  border: 3px solid #99CC00;
   border-radius: 50%;
   margin-top: 10px;
   color: white;
@@ -45,11 +50,9 @@ input{
 }
 
 #break{
-  background-color: orange;
   margin: 5px;
 }
 #session{
-  background-color: teal;
   margin: 5px;
 }
 
@@ -58,7 +61,6 @@ input{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: brown;
 
 }
 
@@ -73,4 +75,40 @@ input{
 .time p{
   font-size: 1.5em;
   color: white;
+}
+
+#mainButtons{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+#mainButtons button{
+  width: 80px;
+  margin: 5px;
+  font-size: 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+#mainButtons #start{
+  background-color: green;
+}
+
+#mainButtons #start:hover{
+  cursor: pointer;
+  background-color: white;
+  color: green;
+}
+
+#mainButtons #stop{
+  background-color: red;
+}
+
+#mainButtons #stop:hover{
+  cursor: pointer;
+  background-color: white;
+  color: red;
 }
